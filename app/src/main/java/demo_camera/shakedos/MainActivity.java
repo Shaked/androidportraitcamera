@@ -19,6 +19,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Device.load();
         setContentView(R.layout.activity_main);
         wrapper = new Wrapper(this);
         picture = new Picture();
